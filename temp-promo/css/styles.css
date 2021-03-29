@@ -1,0 +1,319 @@
+body {
+	background: url("/temp-promo/img/paper-cream.jpg") repeat scroll 0 0 #FFFFFF;
+	margin: 0;
+	padding: 0;
+	font-family: helvetica neue, helvetica;
+}
+
+.container {
+	padding: 20px;
+}
+
+header {
+	background-color: #a27c4a;
+}
+
+section {
+	background-color: ##FFFBEE;
+}
+
+footer {
+	background-color: #885773;
+}
+
+#homepage {
+	position: fixed;
+	z-index:100;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width:100%;
+	background: url("/temp-promo/img/paper-cream.jpg") repeat scroll 0 0 #FFFFFF;
+}
+
+.centered {
+	height: 700px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#ball {
+	background: url("/temp-promo/img/splash-ball.png") no-repeat scroll center center / contain rgba(0, 0, 0, 0);
+	display: block;
+	height: 330px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	visibility: visible;
+	cursor: pointer;
+	z-index: 1 !important;
+}
+
+#heart {
+	background: url("/temp-promo/img/splash-heart.png") no-repeat scroll center center / contain rgba(0, 0, 0, 0);
+	display: block;
+	height: 330px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility: hidden;
+	cursor: pointer;
+	z-index: 2 !important;
+}
+
+#heart a {
+	display: block;
+	height: 330px;
+	width: 300px;
+}
+
+#enter {
+	background: url("/temp-promo/img/splash-enter.png") no-repeat scroll center center / contain rgba(0, 0, 0, 0);
+	display: none;
+	height: 70px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility: visible;
+	cursor: pointer;
+	z-index: 2 !important;
+}
+
+#logo {
+	background: url("/temp-promo/img/splash-logo.png") no-repeat scroll center center / contain rgba(0, 0, 0, 0);
+	display: block;
+	height: 210px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility: visible;
+	cursor: pointer;
+	z-index: 2 !important;
+}
+
+.pulse {
+    visibility: visible !important;
+}
+
+.pulse{
+	animation-name: pulse;
+	-webkit-animation-name: pulse;	
+
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		opacity: 1;		
+	}
+	50% {
+		transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(0.9);
+		opacity: 1;	
+	}			
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.95);
+		opacity: 1;		
+	}
+	50% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(0.95);
+		opacity: 1;	
+	}			
+}
+
+/* Custom, iPhone Retina */ 
+	@media only screen and (min-width : 320px) {
+	.centered {
+	height: 315px;
+	}
+	#ball {
+	background-image: url("/temp-promo/img/splash-ball_mobile.png");
+	height: 165px;
+	width: 150px;
+	margin-bottom: 10px;
+	}
+	#heart {
+	background-image: url("/temp-promo/img/splash-heart_mobile.png");
+	height: 165px;
+	width: 150px;
+	}
+	#heart a {
+	display: block;
+	height: 165px;
+	width: 150px;
+	}
+	#enter {
+	background-image: url("/temp-promo/img/splash-enter_mobile.png");
+	height: 35px;
+	width: 150px;
+	display: block;
+	}
+	#logo {
+	background-image: url("/temp-promo/img/splash-logo_mobile.png");
+	height: 105px;
+	width: 150px;
+	display: block;
+	}	
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (min-width : 480px) {
+	.centered {
+	height: 700px;
+	}
+	#ball {
+	background-image: url("/temp-promo/img/splash-ball.png");
+	height: 330px;
+	width: 300px;
+	margin-bottom: 20px;
+	}
+	#heart {
+	background-image: url("/temp-promo/img/splash-heart.png");
+	height: 330px;
+	width: 300px;
+	}
+	#heart a {
+	display: block;
+	height: 330px;
+	width: 300px;
+	}
+	#enter {
+	background-image: url("/temp-promo/img/splash-enter.png");
+	height: 70px;
+	width: 300px;
+	display: none;
+	}
+	#logo {
+	background-image: url("/temp-promo/img/splash-logo.png");
+	height: 210px;
+	width: 300px;
+	display: block;
+	}
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (min-width : 768px) {
+	.centered {
+	height: 700px;
+	}
+	#ball {
+	background-image: url("/temp-promo/img/splash-ball.png");
+	height: 330px;
+	width: 300px;
+	margin-bottom: 20px;
+	}
+	#heart {
+	background-image: url("/temp-promo/img/splash-heart.png");
+	height: 330px;
+	width: 300px;
+	}
+	#heart a {
+	display: block;
+	height: 330px;
+	width: 300px;
+	}
+	#enter {
+	background-image: url("/temp-promo/img/splash-enter.png");
+	height: 70px;
+	width: 300px;
+	display: none;
+	}
+	#logo {
+	background-image: url("/temp-promo/img/splash-logo.png");
+	height: 210px;
+	width: 300px;
+	display: block;
+	}
+	}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px) {
+	.centered {
+	height: 700px;
+	}
+	#ball {
+	background-image: url("/temp-promo/img/splash-ball.png");
+	height: 330px;
+	width: 300px;
+	margin-bottom: 20px;
+	}
+	#heart {
+	background-image: url("/temp-promo/img/splash-heart.png");
+	height: 330px;
+	width: 300px;
+	}
+	#heart a {
+	display: block;
+	height: 330px;
+	width: 300px;
+	}
+	#enter {
+	background-image: url("/temp-promo/img/splash-enter.png");
+	height: 70px;
+	width: 300px;
+	display: none;
+	}
+	#logo {
+	background-image: url("/temp-promo/img/splash-logo.png");
+	height: 210px;
+	width: 300px;
+	display: block;
+	}
+	}
+
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px) {
+	.centered {
+	height: 700px;
+	}
+	#ball {
+	background-image: url("/temp-promo/img/splash-ball.png");
+	height: 330px;
+	width: 300px;
+	margin-bottom: 20px;
+	}
+	#heart {
+	background-image: url("/temp-promo/img/splash-heart.png");
+	height: 330px;
+	width: 300px;
+	}
+	#heart a {
+	display: block;
+	height: 330px;
+	width: 300px;
+	}
+	#enter {
+	background-image: url("/temp-promo/img/splash-enter.png");
+	height: 70px;
+	width: 300px;
+	display: none;
+	}
+	#logo {
+	background-image: url("/temp-promo/img/splash-logo.png");
+	height: 210px;
+	width: 300px;
+	display: block;
+	}
+	}
